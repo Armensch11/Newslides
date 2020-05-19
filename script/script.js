@@ -45,15 +45,15 @@ forwardBtn.addEventListener('click', function() {
 	}
 });
 
-let randomBtn = document.getElementsByTagName('button')[2];
+// let randomBtn = document.getElementsByTagName('button')[2];
 
-function randomChange() {
-	for (image of imageShow) {
-		image.style.zIndex = -1;
-	}
-	let randomiser = Math.floor(Math.random() * imageShow.length);
-	imageShow[randomiser].style.zIndex = 1;
-}
-randomBtn.addEventListener('click', function() {
-	setInterval((randomChange, 5000));
-});
+// function randomChange() {
+// 	for (image of imageShow) {
+// 		image.style.zIndex = -1;
+// 	}
+// 	let randomiser = Math.floor(Math.random() * imageShow.length);
+// 	imageShow[randomiser].style.zIndex = 1;
+// }
+// randomBtn.addEventListener('click', function() {
+// 	setInterval((randomChange, 5000));
+// });
