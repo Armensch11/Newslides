@@ -1,44 +1,46 @@
 .wrapper {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	position: relative;
-	flex-grow: 0;
-
-	background-image: url(images/keyboard-left.jpg);
-
-	background-size: 100%;
 }
+
 .image {
 	border: 2px solid grey;
 	border-radius: 8px;
-	box-shadow: 4px 4px 8px;
+	box-shadow: 20px 20px 10px;
 	display: flex;
 	position: absolute;
-	right: 90;
-	bottom: 20;
+	right: 240;
+	bottom: 200;
 	align-self: center;
-	width: 50%;
-	height: 70%;
+	width: 40%;
+	height: 65%;
 	justify-content: space-evenly;
 	box-sizing: border-box;
 	background-color: grey;
 }
 div.button-container {
-	display: inline-flex;
 	position: absolute;
-	left: 337;
-	bottom: 250;
-
+	left: 41.5%;
+	bottom: 16%;
+	display: flex;
 	justify-content: space-between;
-	width: 260px;
+	width: 51%;
 	height: fit-content;
 }
 button {
-	width: fit-content;
-	height: fit-content;
-	border: none;
+	width: 78px;
+	height: 45px;
+	background-color: rgb(115, 131, 127);
+	border: thin;
 	padding: 0px;
+	border-radius: 10px;
+	font-family: 'Courier New', Courier, monospace;
+}
+button:hover {
+	font-size: 18px;
+	font-weight: 600;
+	background-color: rgb(184, 214, 207);
+	box-shadow: 8px 8px 5px;
 }
 
 .nested-image {
