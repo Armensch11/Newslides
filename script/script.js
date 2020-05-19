@@ -4,7 +4,21 @@ let positionHolder = 0;
 let backBtn = document.getElementsByTagName('button')[0];
 let iconBorder = document.getElementsByClassName('icon-image');
 
-backBtn.addEventListener('click', function() {
+backBtn.addEventListener('click', backWard);
+
+let forwardBtn = document.getElementsByTagName('button')[1];
+
+forwardBtn.addEventListener('click', forWard);
+
+addEventListener('keydown', function(event) {
+	if (event.which == 37) {
+		backWard();
+	} else if (event.which === 39) {
+		forWard();
+	}
+});
+
+function backWard() {
 	for (image of imageShow) {
 		image.style.zIndex = -1;
 	}
@@ -23,11 +37,8 @@ backBtn.addEventListener('click', function() {
 
 		iconBorder[positionHolder].style.border = '3px solid darkgrey';
 	}
-});
-
-let forwardBtn = document.getElementsByTagName('button')[1];
-
-forwardBtn.addEventListener('click', function() {
+}
+function forWard() {
 	for (image of imageShow) {
 		image.style.zIndex = -1;
 	}
@@ -43,7 +54,7 @@ forwardBtn.addEventListener('click', function() {
 		imageShow[positionHolder].style.zIndex = 1;
 		iconBorder[positionHolder].style.border = '3px solid yellow';
 	}
-});
+}
 
 // let randomBtn = document.getElementsByTagName('button')[2];
 
