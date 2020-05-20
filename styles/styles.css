@@ -88,5 +88,5 @@ div.icons > img {
 	max-width: 100%;
 }
 #stop {
-	font: red;
+	background-color: rgba(255, 0, 0, 0.575);
 }
