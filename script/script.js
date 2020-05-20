@@ -33,7 +33,7 @@ function backWard() {
 		image.style.zIndex = -1;
 	}
 	for (border of iconBorder) {
-		border.style.border = '1px solid';
+		border.style.border = '1px solid grey';
 	}
 
 	if (positionHolder === 0) {
